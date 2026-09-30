@@ -57,7 +57,7 @@ No additional Python packages are required.
 ## Usage
 
 ```bash
-python pe_sanitizer.py -i <input.exe> -o <output.exe>
+python patch_headers.py -i <input.exe> -o <output.exe>
 ```
 
 | Flag | Description |
@@ -68,7 +68,7 @@ python pe_sanitizer.py -i <input.exe> -o <output.exe>
 ### Example
 
 ```bash
-$ python pe_sanitizer.py -i raw_compiled_binary.exe -o targeted_output_binary.exe
+$ python patch_headers.py -i raw_compiled_binary.exe -o targeted_output_binary.exe
 ```
 
 The original binary remains unchanged and the sanitized PE is written to the output path.
@@ -110,13 +110,13 @@ patchpeskyheaders clears the legacy stub content while preserving the structural
 To view the available command-line arguments:
 
 ```bash
-python pe_sanitizer.py --help
+python patch_headers.py --help
 ```
 
 Example output:
 
 ```text
-usage: pe_sanitizer.py [-h] -i INPUT -o OUTPUT
+usage: patch_headers.py [-h] -i INPUT -o OUTPUT
 
 Safe PE Header Sanitizer: Removes tracking telemetry and compiler environment
 signatures while preserving full execution capability.
@@ -140,7 +140,7 @@ raw_compiled_binary.exe
 Running:
 
 ```bash
-python pe_sanitizer.py -i raw_compiled_binary.exe -o targeted_output_binary.exe
+python patch_headers.py -i raw_compiled_binary.exe -o targeted_output_binary.exe
 ```
 
 Produces:
