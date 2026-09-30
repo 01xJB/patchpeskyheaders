@@ -21,8 +21,6 @@ For authorized red-team exercises, malware-analysis labs, and reverse-engineerin
 
 The tool writes to a separate output file, preserving the original for comparison or recovery. It does **not** guarantee anonymity, evade detection, or remove every identifying feature from a binary.
 
-> **Authorized use only:** Use this tool only on binaries you own or are explicitly authorized to analyze or modify. The author assumes no liability for misuse.
-
 ## Features
 
 - Sanitizes selected PE metadata and build-environment artifacts
